@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WishApp's privacy policy: contacts, birthday reminders, messaging, community sharing, cloud backups, permissions and deletion.">
+  <link rel="canonical" href="https://satsang-tech.github.io/wishapp/privacy-policy.html">
+  <title>WishApp Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px 16px; background: #f5f5f5; color: #29352e; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.7; }
+    main { max-width: 800px; margin: 0 auto; padding: 40px; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px #172f2110; }
+    .brand { margin: 0 0 8px; color: #276348; font-size: 14px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    h1 { margin: 0 0 8px; color: #215b40; font-size: clamp(28px, 5vw, 36px); line-height: 1.2; }
+    h2 { margin: 32px 0 12px; font-size: 21px; line-height: 1.35; }
+    h3 { margin: 24px 0 10px; font-size: 18px; }
+    p { margin: 0 0 16px; }
+    li { margin-bottom: 8px; }
+    ul { padding-left: 24px; }
+    a { color: #215b40; text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #cb8724; outline-offset: 4px; }
+    .updated { color: #66736b; font-size: 14px; }
+    .summary, .contact { padding: 20px 24px; background: #f0f7f2; border-radius: 8px; margin: 24px 0; }
+    .summary { border-left: 4px solid #347451; }
+    .summary p:last-child, .contact p:last-child { margin-bottom: 0; }
+    .contact h2 { margin-top: 0; }
+    .package { overflow-wrap: anywhere; }
+    footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e1e8e2; font-size: 14px; color: #66736b; }
+    @media (max-width: 520px) { body { padding: 12px; } main { padding: 24px 20px; } .summary, .contact { padding: 18px; } }
+    @media print { body { padding: 0; background: #fff; } main { max-width: none; padding: 0; box-shadow: none; } a { color: inherit; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="brand">WishApp</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: October 10, 2026</p>
+    <p>This policy applies to WishApp, the birthday and anniversary reminder app for Android, package <span class="package">com.satishranka.wishapp</span>. WishApp is developed by Satish Ratanchand Ranka, Nagpur, Maharashtra, India. This policy is published on the Satsang Technology website. Watchover has a <a href="../watchover/privacy-policy.html">separate privacy policy</a>.</p>
+  </header>
+
+  <aside class="summary" aria-label="Privacy overview">
+    <p><strong>Your contacts and reminders are stored on your phone.</strong> Optional Google sync, community features, cloud backups and messaging use the external services described below.</p>
+    <p>Community upload and lookup send phone numbers to the WishApp server over HTTPS. Sending a wish shares its recipient and content with the messaging app you use. Choose these features only for information you are authorized to use and share.</p>
+  </aside>
+
+  <h2>1. Information stored and used on your phone</h2>
+  <p>WishApp stores information you enter, select or import to organize wishes:</p>
+  <ul>
+    <li>Contact names, display names, phone numbers, birthdays, anniversaries, relationship labels and notes.</li>
+    <li>Selected contact and sender photos, greeting-card preferences and message templates.</li>
+    <li>Your sender profile, reminder settings, synchronization preferences and records of sent, skipped or unconfirmed wishes.</li>
+    <li>Data imported from your phone contacts, Google contacts or CSV/Excel files you select.</li>
+  </ul>
+  <p>These records support reminders, personalized messages, greeting cards and contact synchronization. With contact-write permission, WishApp can save a birthday you add or change to your phone's address book. Photos selected for greeting cards can be shared with recipients when you share a card.</p>
+
+  <h2>2. Google account connection</h2>
+  <p>If you connect Google, WishApp uses Google People API to read contact names, phone numbers, birthdays, event dates and photos and merge them with your app contacts. The sign-in flow requests Google Contacts and read-only Google Calendar access; the contact synchronization implemented in the app uses People API.</p>
+  <p>An authorization token is stored on your phone and sent to Google when making authorized requests. Google and the Expo authentication redirect service handle the sign-in flow. You can disconnect Google in WishApp and revoke access through your Google account. Disconnecting does not automatically remove contacts already imported into WishApp.</p>
+
+  <h2>3. Community features and birthday requests</h2>
+  <p>WishApp's community and backup service is hosted at <a href="https://share.wishapp.co.in">share.wishapp.co.in</a>. Community sharing and automatic birthday lookup are off by default.</p>
+  <h3>Community sharing</h3>
+  <p>When you enable community sharing, WishApp sends contacts' phone numbers and available birthday and anniversary dates to the service. The community-upload request does not include contact names or photos. Shared dates may be returned to other WishApp users looking up matching phone numbers.</p>
+  <h3>Birthday lookup</h3>
+  <p>When you request a lookup, or enable automatic import, WishApp sends phone numbers of contacts with missing dates to the service and receives matching dates. Automatic checks are limited to approximately one per 12 hours and depend on the app running. These upload and lookup requests contain phone numbers; server-side matching identifiers do not make the information anonymous.</p>
+  <h3>Ask a contact for their dates</h3>
+  <p>When you use the birthday or anniversary request feature, WishApp sends the contact's phone number and name, your sender name and the type of request to the service to prepare a sharing link. The link contains the phone number and can be forwarded by anyone receiving it. Information submitted through the linked form is sent to the service.</p>
+  <p>You can turn off future community uploads and automatic imports in Settings. This does not erase information already shared; contact us to request server deletion.</p>
+
+  <h2>4. Cloud backups</h2>
+  <p>When you create a cloud backup, WishApp uploads an encrypted copy of your contacts, templates, settings and wish history. The request also includes your selected backup phone number, a backup identifier, app version and timestamp. Your phone number is also sent when checking backup status or requesting a restore.</p>
+  <p>Backup protection depends on the version and format used. Versions offering passphrase-based backups use AES-256-GCM authenticated encryption with a key derived using salted scrypt. Earlier PIN-based backups use a legacy protection format and do not have the same protection. The backup passphrase or PIN itself is not uploaded. Keep it safe: it is needed to restore the backup, and we cannot recover it for you.</p>
+  <p>When a passphrase-enabled version is available on your device, restore any older backup and create a new passphrase-protected backup to replace it. Request deletion of a server backup through the contact details below. Clearing local app data alone does not delete a cloud backup.</p>
+
+  <h2>5. Messaging and Accessibility Service</h2>
+  <p>When you send or share a wish, WishApp passes the recipient's phone number, message and any selected card or image to WhatsApp, your SMS app or another app you choose. That service and your recipient handle the shared content under their own practices.</p>
+  <p>If you enable automatic sending and grant Android Accessibility Service access, WishApp checks screen content in supported messaging apps to locate the prepared message and activate Send. This access supports the automatic wish you configured. The accessibility workflow operates on the device and does not upload screen content to the community or backup service.</p>
+  <p>You can disable automatic sending in WishApp and revoke accessibility access in Android settings. An app opening or a Send action being activated does not establish that the recipient received the message.</p>
+
+  <h2>6. Permissions and optional features</h2>
+  <ul>
+    <li><strong>Contacts:</strong> importing contacts and saving birthday changes to the address book.</li>
+    <li><strong>Notifications and alarms:</strong> showing reminders at selected times.</li>
+    <li><strong>Camera, photos and selected files:</strong> adding photos, making cards and importing the contact files you choose.</li>
+    <li><strong>Accessibility:</strong> locating the prepared message and Send control for optional automatic wishes.</li>
+    <li><strong>Foreground service, wake/boot handling and battery settings:</strong> supporting schedules and background operation; Android may show an ongoing notification.</li>
+    <li><strong>Internet:</strong> Google connection, community features, backups, sharing links and update checks.</li>
+  </ul>
+  <p>You can manage permissions in Android settings. Features that depend on a permission may stop working when it is revoked. Manual contact entry and the use of optional online features are separate choices.</p>
+
+  <h2>7. Storage, security and service providers</h2>
+  <p>Local app records and Google authorization tokens are kept in app storage. Their protection depends on Android's app isolation and your device's security; local storage is not a separate encrypted vault provided by WishApp. Android's own backup or device-transfer features may also copy app data, depending on your device settings and app version.</p>
+  <p>Community, sharing-link and backup requests to the WishApp service use HTTPS. Servers and hosting providers receive the request information needed to deliver these features, including network-request information. No security measure can guarantee protection against device compromise or every unauthorized access.</p>
+  <p>WishApp has no advertising SDK or publisher-operated analytics SDK in the reviewed app. We do not sell personal data or use it for targeted advertising. Google, Expo, messaging providers, hosting providers and Google Play may process information needed to provide their services under their own policies. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>, <a href="https://expo.dev/privacy">Expo's Privacy Policy</a> and <a href="https://www.whatsapp.com/legal/privacy-policy">WhatsApp's Privacy Policy</a>.</p>
+
+  <h2>8. Retention, deletion and your choices</h2>
+  <ul>
+    <li><strong>Local records:</strong> retained until you remove them, clear WishApp's app data or uninstall. Copies in Android backups or device transfers are governed by your system settings.</li>
+    <li><strong>Community data and cloud backups:</strong> retained by the service until deletion is requested and processed. Disabling a feature stops future use through that feature but does not itself delete server records.</li>
+    <li><strong>Google connection:</strong> disconnect in WishApp and revoke permissions in your Google account. Delete imported contacts separately if you no longer want them in WishApp.</li>
+    <li><strong>Shared messages, cards and links:</strong> removing local records does not remove copies held by recipients or messaging services.</li>
+  </ul>
+  <p>You can ask us about access, correction or deletion of information held by the WishApp service. For server deletion, identify the feature and phone number involved so we can locate the records; we may need to verify that you are authorized to request the deletion. We will process deletion requests within 7 business days.</p>
+  <p>If you contact us by email, we receive your email address and the information you provide. We use it to respond and retain it as needed to handle the request and any applicable obligations. Do not send your backup passphrase, PIN, Google password or full address book.</p>
+
+  <h2>9. Children's privacy</h2>
+  <p>WishApp is not intended for use by children under 13. Users may store family members' birthdays, including children's dates, so only enter or share information you are authorized to use. If you believe a child has supplied personal information to our service, contact us to request its removal.</p>
+
+  <h2>10. This website and policy changes</h2>
+  <p>This page is hosted on GitHub Pages. GitHub receives ordinary web-request information such as IP address, browser information, requested page and request time to serve and secure it. This page includes no advertising or analytics scripts. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+  <p>We will update this page and its “Last updated” date when our practices change. Material new uses of personal information will receive appropriate notice and, where required, consent before they begin.</p>
+
+  <section class="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">11. Contact us</h2>
+    <p><strong>Developer:</strong> Satish Ratanchand Ranka<br><strong>Location:</strong> Nagpur, Maharashtra, India</p>
+    <p><strong>Email:</strong> <a href="mailto:srranka@gmail.com">srranka@gmail.com</a><br><strong>Alternative email:</strong> <a href="mailto:satish.ranka@dbhaskar.net">satish.ranka@dbhaskar.net</a></p>
+    <p>Mention WishApp when contacting us about this policy or a deletion request.</p>
+  </section>
+  <footer>WishApp · <a href="../index.html">Satsang Technology</a> · <a href="../watchover/privacy-policy.html">Watchover privacy policy</a></footer>
+</main>
+</body>
+</html>
