@@ -2,6 +2,7 @@
 
 Public website and app privacy policies: https://satsang-tech.github.io/
 
+- Keepsake: https://satsang-tech.github.io/keepsake/privacy-policy.html
 - Watchover: https://satsang-tech.github.io/watchover/privacy-policy.html
 - WishApp currently links to its existing policy on wishapp.co.in.
 
