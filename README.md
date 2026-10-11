@@ -12,9 +12,9 @@ on October 11, 2026. All five source pages are included:
 - Contact: `contact.html`
 
 `apps.html` retains the existing app descriptions and support information, with
-links from the homepage and every studio footer. Policy wording and public URLs
-are unchanged. Each policy page includes website navigation at the top and
-explicit return links at the bottom, using plain HTML and system fonts.
+links from the homepage and every page's header and footer. Policy wording and
+public URLs are unchanged. Each policy page shares the website navigation and
+includes explicit return links at the bottom.
 
 - Keepsake: https://satsang-tech.github.io/keepsake/privacy-policy.html
 - Watchover: https://satsang-tech.github.io/watchover/privacy-policy.html
@@ -35,10 +35,15 @@ JavaScript-disabled visitors can use the direct email links.
 
 ## Shared assets
 
-`style.css` preserves the source palette, typography and responsive layout, with
-small accessibility and overflow fixes. `main.js` handles the mobile menu and
-email draft preparation. Studio pages use the source Google Fonts links; app
-privacy documents remain standalone and use system fonts. No build is required.
+All nine pages share the same header, footer, typography, colors, content grid,
+page introductions and spacing rules in `style.css`. Policy articles use a
+narrower reading width within the shared grid. `main.js` handles the mobile menu
+and email draft preparation. No build is required.
+
+Fraunces, Inter and IBM Plex Mono are self-hosted in `assets/fonts/`, with their
+OFL licenses. No page requests a third-party font or script. HTML references to
+the stylesheet and script include a version query to prevent stale cached assets
+from being combined with updated markup; update it when changing shared assets.
 
 ## Migration verification — October 11, 2026
 
@@ -47,9 +52,27 @@ privacy documents remain standalone and use system fonts. No build is required.
 - Compared the complete main text, page titles, descriptions, navigation, form
   field labels and footer content against the source. Differences are limited to
   the documented app links and email-draft adaptation, plus accessibility markup.
-- Confirmed the three existing privacy documents are byte-for-byte unchanged,
-  and the existing app descriptions and support details are retained.
+- Confirmed the three existing privacy documents were byte-for-byte unchanged
+  during the initial migration, and the app descriptions and support details
+  were retained. The subsequent layout update preserves their complete wording.
 - Checked every local page/asset link, fragment, page heading and element ID.
 - Checked all six studio/app-directory pages at 1440px and 390px with no horizontal
   overflow. Verified the mobile menu, Escape key, required form fields, special
   characters in drafts and invalidation of a draft after editing. No email was sent.
+
+## Layout consistency review — October 11, 2026
+
+- Replaced the separate privacy-page design with the shared website design and
+  added Apps & privacy to every main menu.
+- Standardized heading alignment and scale, horizontal margins, section gaps,
+  card layout, mobile navigation and footer placement across all nine pages.
+- Compared all main content against the preceding published version. Policy
+  wording and studio/app information remain unchanged; the hosting note now
+  correctly describes locally hosted fonts, and stray email separators were removed.
+- Verified identical header/footer structure, local links, fragments, unique IDs,
+  one primary heading per page and all bundled font assets.
+- Checked all nine pages at 320, 390, 768, 1024 and 1440 pixels: 45 combinations
+  without horizontal overflow or clipped text, with matching heading alignment
+  and no blank gap above the footer. Visually reviewed desktop and mobile layouts.
+- Rechecked the privacy-page mobile menu, Escape key, return to Home and contact
+  draft preparation/invalidation. No browser errors and no email sent.

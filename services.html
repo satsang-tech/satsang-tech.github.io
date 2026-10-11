@@ -5,22 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services — Satsang Technology</title>
 <meta name="description" content="Custom software, web platforms, mobile apps, and long-term maintenance from Satsang Technology.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="style.css?v=20261011-layout">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-head">
+<header class="site-head" id="site-navigation">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="mark">Satsang<b>.</b></span><span class="tag">Technology</span></a>
+    <a class="brand" href="index.html" aria-label="Satsang Technology home"><span class="mark">Satsang<b>.</b></span><span class="tag">Technology</span></a>
     <nav class="nav" id="nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="services.html" class="active" aria-current="page">Services</a>
       <a href="portfolio.html">Work</a>
       <a href="about.html">About</a>
+      <a href="apps.html">Apps &amp; privacy</a>
       <a href="contact.html">Contact</a>
     </nav>
     <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -28,7 +27,7 @@
 </header>
 
 <main id="main">
-  <section class="hero" style="padding-bottom:40px;">
+  <section class="page-intro">
     <div class="wrap">
       <span class="eyebrow">Services</span>
       <h1>What we can build for you.</h1>
@@ -36,30 +35,30 @@
     </div>
   </section>
 
-  <section class="section" style="padding-top:24px;">
+  <section class="section">
     <div class="wrap">
       <div class="grid cols-2">
         <div class="cell">
           <span class="num">/ 01 — Custom software</span>
-          <h3>Operational systems</h3>
+          <h2>Operational systems</h2>
           <p>The software an organisation runs on: billing, distribution, inventory, payroll, HR, field management. We map how your team actually works and build systems that fit it, with the admin controls and reporting to run them.</p>
           <div class="stack"><b>Typical stack</b> · Node.js · Express · PostgreSQL<br><b>Includes</b> · role-based access · reporting · integrations</div>
         </div>
         <div class="cell">
           <span class="num">/ 02 — Web platforms</span>
-          <h3>Web applications &amp; portals</h3>
+          <h2>Web applications &amp; portals</h2>
           <p>Customer-facing platforms and internal admin panels — fast, responsive, and dependable. From community directories to verification workflows, we build the web app and the tooling behind it.</p>
           <div class="stack"><b>Typical stack</b> · React · vanilla JS · REST APIs<br><b>Includes</b> · admin panels · auth · dashboards</div>
         </div>
         <div class="cell">
           <span class="num">/ 03 — Mobile apps</span>
-          <h3>Android app development</h3>
+          <h2>Android app development</h2>
           <p>End-to-end mobile products: design, build, release, and maintain. We've taken apps all the way through the Google Play review process to a live, updated listing — and we handle the store, not just the code.</p>
           <div class="stack"><b>Typical stack</b> · React Native · Expo<br><b>Includes</b> · Play Console · releases · push notifications</div>
         </div>
         <div class="cell">
           <span class="num">/ 04 — Maintenance</span>
-          <h3>Long-term support</h3>
+          <h2>Long-term support</h2>
           <p>Software isn't finished at launch. We stay with the systems we build — fixing, improving, and keeping them running as needs change. Most of our work has been in production for years, not weeks.</p>
           <div class="stack"><b>Covers</b> · hosting · updates · new features<br><b>Approach</b> · surgical changes · nothing broken</div>
         </div>
@@ -68,7 +67,7 @@
   </section>
 
   <!-- process -->
-  <section class="section" style="padding-top:0;">
+  <section class="section">
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">How a project runs</span>
@@ -79,25 +78,25 @@
           <span class="idx">01</span>
           <span class="what">Understand</span>
           <span class="meta">what you're trying to do, and for whom</span>
-          <span class="stat" style="font-size:14px;font-family:var(--mono);color:var(--slate);">a conversation</span>
+          <span class="stat stat-mono">a conversation</span>
         </div>
         <div class="ledger-row">
           <span class="idx">02</span>
           <span class="what">Scope &amp; plan</span>
           <span class="meta">what we'll build, and in what order</span>
-          <span class="stat" style="font-size:14px;font-family:var(--mono);color:var(--slate);">a clear proposal</span>
+          <span class="stat stat-mono">a clear proposal</span>
         </div>
         <div class="ledger-row">
           <span class="idx">03</span>
           <span class="what">Build &amp; show</span>
           <span class="meta">working software, shown as it comes together</span>
-          <span class="stat" style="font-size:14px;font-family:var(--mono);color:var(--slate);">in stages</span>
+          <span class="stat stat-mono">in stages</span>
         </div>
         <div class="ledger-row">
           <span class="idx">04</span>
           <span class="what">Ship &amp; stay</span>
           <span class="meta">launch, then keep it running</span>
-          <span class="stat" style="font-size:14px;font-family:var(--mono);color:var(--slate);">ongoing</span>
+          <span class="stat stat-mono">ongoing</span>
         </div>
       </div>
     </div>
@@ -114,23 +113,24 @@
 </main>
 
 <footer class="site-foot">
-  <div class="wrap">
+  <div class="wrap footer-grid">
     <div>
-      <span class="mark">Satsang<b>.</b> Technology</span>
+      <a class="footer-brand" href="index.html"><span class="mark">Satsang<b>.</b> Technology</span></a>
       <p>A family-run software studio building and maintaining production systems, platforms, and apps.</p>
     </div>
-    <div class="foot-col">
-      <h4>Explore</h4>
+    <nav class="foot-col" aria-label="Footer navigation">
+      <h2>Explore</h2>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a href="portfolio.html">Our work</a>
-      <a href="about.html">About us</a>
-      <a href="contact.html">Contact</a>
+      <a href="portfolio.html">Work</a>
+      <a href="about.html">About</a>
       <a href="apps.html">Apps &amp; privacy</a>
-    </div>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="foot-col">
-      <h4>Reach us</h4>
-      <a href="mailto:hello@satsangtechnology.in">hello@satsangtechnology.in</a> / <a href="mailto:satsangtechno@gmail.com">satsangtechno@gmail.com</a>
+      <h2>Reach us</h2>
+      <a href="mailto:hello@satsangtechnology.in">hello@satsangtechnology.in</a>
+      <a href="mailto:satsangtechno@gmail.com">satsangtechno@gmail.com</a>
       <span>Nagpur, Maharashtra, India</span>
     </div>
   </div>
@@ -140,6 +140,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js?v=20261011-layout"></script>
 </body>
 </html>

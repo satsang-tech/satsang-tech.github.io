@@ -23,7 +23,7 @@
       toggle.focus();
     }
   });
-  window.matchMedia('(max-width: 860px)').addEventListener('change', function () {
+  window.matchMedia('(max-width: 960px)').addEventListener('change', function () {
     setOpen(false);
   });
 })();

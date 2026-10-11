@@ -5,22 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Satsang Technology</title>
 <meta name="description" content="Get in touch with Satsang Technology to start a software, web, or mobile project.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="style.css?v=20261011-layout">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-head">
+<header class="site-head" id="site-navigation">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="mark">Satsang<b>.</b></span><span class="tag">Technology</span></a>
+    <a class="brand" href="index.html" aria-label="Satsang Technology home"><span class="mark">Satsang<b>.</b></span><span class="tag">Technology</span></a>
     <nav class="nav" id="nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="portfolio.html">Work</a>
       <a href="about.html">About</a>
+      <a href="apps.html">Apps &amp; privacy</a>
       <a href="contact.html" class="active" aria-current="page">Contact</a>
     </nav>
     <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -28,7 +27,7 @@
 </header>
 
 <main id="main">
-  <section class="hero" style="padding-bottom:40px;">
+  <section class="page-intro">
     <div class="wrap">
       <span class="eyebrow">Contact</span>
       <h1>Tell us what you're building.</h1>
@@ -36,7 +35,7 @@
     </div>
   </section>
 
-  <section class="section" style="padding-top:20px;">
+  <section class="section">
     <div class="wrap contact-grid">
       <!-- FORM -->
       <div>
@@ -68,9 +67,9 @@
       <!-- DETAILS -->
       <div>
         <span class="eyebrow">Reach us directly</span>
-        <div class="contact-detail" style="margin-top:18px;">
+        <div class="contact-detail">
           <div class="k">Email</div>
-          <div class="v"><a href="mailto:hello@satsangtechnology.in">hello@satsangtechnology.in</a> / <a href="mailto:satsangtechno@gmail.com">satsangtechno@gmail.com</a></div>
+          <div class="v email-list"><a href="mailto:hello@satsangtechnology.in">hello@satsangtechnology.in</a><a href="mailto:satsangtechno@gmail.com">satsangtechno@gmail.com</a></div>
         </div>
         <div class="contact-detail">
           <div class="k">Phone</div>
@@ -84,30 +83,31 @@
           <div class="k">Hours</div>
           <div class="v">Mon–Sat, 10:00–19:00 IST</div>
         </div>
-        <p style="color:var(--slate);font-size:14px;margin-top:22px;max-width:36ch;">Prefer email? Write to us directly and we'll get back to you, usually within a day or two.</p>
+        <p class="contact-note">Prefer email? Write to us directly and we'll get back to you, usually within a day or two.</p>
       </div>
     </div>
   </section>
 </main>
 
 <footer class="site-foot">
-  <div class="wrap">
+  <div class="wrap footer-grid">
     <div>
-      <span class="mark">Satsang<b>.</b> Technology</span>
+      <a class="footer-brand" href="index.html"><span class="mark">Satsang<b>.</b> Technology</span></a>
       <p>A family-run software studio building and maintaining production systems, platforms, and apps.</p>
     </div>
-    <div class="foot-col">
-      <h4>Explore</h4>
+    <nav class="foot-col" aria-label="Footer navigation">
+      <h2>Explore</h2>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a href="portfolio.html">Our work</a>
-      <a href="about.html">About us</a>
-      <a href="contact.html">Contact</a>
+      <a href="portfolio.html">Work</a>
+      <a href="about.html">About</a>
       <a href="apps.html">Apps &amp; privacy</a>
-    </div>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="foot-col">
-      <h4>Reach us</h4>
-      <a href="mailto:hello@satsangtechnology.in">hello@satsangtechnology.in</a> / <a href="mailto:satsangtechno@gmail.com">satsangtechno@gmail.com</a>
+      <h2>Reach us</h2>
+      <a href="mailto:hello@satsangtechnology.in">hello@satsangtechnology.in</a>
+      <a href="mailto:satsangtechno@gmail.com">satsangtechno@gmail.com</a>
       <span>Nagpur, Maharashtra, India</span>
     </div>
   </div>
@@ -117,6 +117,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js?v=20261011-layout"></script>
 </body>
 </html>

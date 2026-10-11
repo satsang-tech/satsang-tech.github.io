@@ -5,22 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Satsang Technology</title>
 <meta name="description" content="Satsang Technology is a family-run software studio in Nagpur, India, building production systems and apps.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="style.css?v=20261011-layout">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-head">
+<header class="site-head" id="site-navigation">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="mark">Satsang<b>.</b></span><span class="tag">Technology</span></a>
+    <a class="brand" href="index.html" aria-label="Satsang Technology home"><span class="mark">Satsang<b>.</b></span><span class="tag">Technology</span></a>
     <nav class="nav" id="nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="portfolio.html">Work</a>
       <a href="about.html" class="active" aria-current="page">About</a>
+      <a href="apps.html">Apps &amp; privacy</a>
       <a href="contact.html">Contact</a>
     </nav>
     <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -28,7 +27,7 @@
 </header>
 
 <main id="main">
-  <section class="hero" style="padding-bottom:40px;">
+  <section class="page-intro">
     <div class="wrap">
       <span class="eyebrow">About us</span>
       <h1>A family of engineers, building things that last.</h1>
@@ -36,11 +35,11 @@
     </div>
   </section>
 
-  <section class="section" style="padding-top:20px;">
+  <section class="section">
     <div class="wrap two-col">
       <div>
         <span class="eyebrow">Our story</span>
-        <p class="lead-serif" style="margin-top:14px;">From building for our own community, to building for yours.</p>
+        <p class="lead-serif">From building for our own community, to building for yours.</p>
       </div>
       <div class="prose">
         <p>We started the way a lot of the best software starts — by solving our own problems. Building tools for our community, systems for the organisations we worked with, apps for real needs we saw around us.</p>
@@ -51,7 +50,7 @@
   </section>
 
   <!-- values -->
-  <section class="section" style="padding-top:0;">
+  <section class="section">
     <div class="wrap">
       <div class="grid cols-3">
         <div class="cell">
@@ -74,7 +73,7 @@
   </section>
 
   <!-- at a glance ledger -->
-  <section class="section" style="padding-top:0;">
+  <section class="section">
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">At a glance</span>
@@ -85,25 +84,25 @@
           <span class="idx">—</span>
           <span class="what">Based in</span>
           <span class="meta">working with clients anywhere</span>
-          <span class="stat" style="font-size:16px;">Nagpur, India</span>
+          <span class="stat stat-text">Nagpur, India</span>
         </div>
         <div class="ledger-row">
           <span class="idx">—</span>
           <span class="what">Structure</span>
           <span class="meta">a close, senior team</span>
-          <span class="stat" style="font-size:16px;">Family-run studio</span>
+          <span class="stat stat-text">Family-run studio</span>
         </div>
         <div class="ledger-row">
           <span class="idx">—</span>
           <span class="what">We build with</span>
           <span class="meta">the tools we know deeply</span>
-          <span class="stat" style="font-size:15px;font-family:var(--mono);">Node · React · RN · Postgres</span>
+          <span class="stat stat-mono">Node · React · RN · Postgres</span>
         </div>
         <div class="ledger-row">
           <span class="idx">—</span>
           <span class="what">Track record</span>
           <span class="meta">systems &amp; apps still in production</span>
-          <span class="stat" style="font-size:16px;">Years, not weeks</span>
+          <span class="stat stat-text">Years, not weeks</span>
         </div>
       </div>
     </div>
@@ -120,23 +119,24 @@
 </main>
 
 <footer class="site-foot">
-  <div class="wrap">
+  <div class="wrap footer-grid">
     <div>
-      <span class="mark">Satsang<b>.</b> Technology</span>
+      <a class="footer-brand" href="index.html"><span class="mark">Satsang<b>.</b> Technology</span></a>
       <p>A family-run software studio building and maintaining production systems, platforms, and apps.</p>
     </div>
-    <div class="foot-col">
-      <h4>Explore</h4>
+    <nav class="foot-col" aria-label="Footer navigation">
+      <h2>Explore</h2>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a href="portfolio.html">Our work</a>
-      <a href="about.html">About us</a>
-      <a href="contact.html">Contact</a>
+      <a href="portfolio.html">Work</a>
+      <a href="about.html">About</a>
       <a href="apps.html">Apps &amp; privacy</a>
-    </div>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="foot-col">
-      <h4>Reach us</h4>
-      <a href="mailto:hello@satsangtechnology.in">hello@satsangtechnology.in</a> / <a href="mailto:satsangtechno@gmail.com">satsangtechno@gmail.com</a>
+      <h2>Reach us</h2>
+      <a href="mailto:hello@satsangtechnology.in">hello@satsangtechnology.in</a>
+      <a href="mailto:satsangtechno@gmail.com">satsangtechno@gmail.com</a>
       <span>Nagpur, Maharashtra, India</span>
     </div>
   </div>
@@ -146,6 +146,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js?v=20261011-layout"></script>
 </body>
 </html>
