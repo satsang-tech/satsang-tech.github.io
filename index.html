@@ -1,61 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Satsang Technology apps, privacy policies and support.">
-  <title>Satsang Technology — Apps &amp; Privacy</title>
-  <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; background: #f4f7f3; color: #263b30; font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
-    main { max-width: 1000px; margin: auto; padding: 64px 24px 32px; }
-    .brand { font-size: 14px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: #38644b; }
-    h1 { max-width: 720px; font-size: clamp(36px, 7vw, 60px); line-height: 1.1; letter-spacing: -.035em; margin: 24px 0; }
-    .intro { max-width: 610px; color: #57665b; font-size: 19px; }
-    .apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 44px 0; }
-    article { background: #fff; border: 1px solid #dce5dd; border-radius: 16px; padding: 28px; }
-    h2 { font-size: 25px; line-height: 1.3; margin: 0 0 12px; }
-    article p { color: #57665b; margin: 0 0 24px; }
-    a { color: #215b40; text-underline-offset: 4px; overflow-wrap: anywhere; }
-    a:focus-visible { outline: 3px solid #c58730; outline-offset: 5px; }
-    .policy { font-weight: 650; }
-    .support { padding: 28px; border-radius: 16px; background: #e6efe6; }
-    .support h2 { font-size: 21px; }
-    .support p { margin: 8px 0; }
-    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #dce5dd; color: #637267; font-size: 14px; }
-    @media (max-width: 620px) { main { padding: 36px 20px 24px; } .apps { grid-template-columns: 1fr; gap: 16px; margin: 32px 0; } article, .support { padding: 24px; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satsang Technology — Software that keeps things running</title>
+<meta name="description" content="Satsang Technology builds and maintains production software — enterprise operations systems, web platforms, and mobile apps. A family-run engineering studio in Nagpur, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header>
-    <p class="brand">Satsang Technology</p>
-    <h1>Our apps.<br>Your privacy.</h1>
-    <p class="intro">Find privacy information and support for our apps. Each policy explains the information that app uses and the controls available to you.</p>
-  </header>
-  <section class="apps" aria-label="App privacy policies">
-    <article>
-      <h2>Watchover</h2>
-      <p>A parental supervision app with approved screen-time sessions and on-device face checks.</p>
-      <a class="policy" href="watchover/privacy-policy.html">Read Watchover's privacy policy</a>
-    </article>
-    <article>
-      <h2>WishApp</h2>
-      <p>Birthday and anniversary reminders, greeting cards and wishes for the people in your life.</p>
-      <a class="policy" href="wishapp/privacy-policy.html">Read WishApp's privacy policy</a>
-    </article>
-    <article>
-      <h2>Keepsake</h2>
-      <p>A photo gallery with local face grouping, albums, editing and search, plus optional online place-name lookup.</p>
-      <a class="policy" href="keepsake/privacy-policy.html">Read Keepsake's privacy policy</a>
-    </article>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark">Satsang<b>.</b></span>
+      <span class="tag">Technology</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Software studio · Nagpur, India</span>
+      <h1>We build the systems that <em>quietly keep things running.</em></h1>
+      <p class="lede">Satsang Technology designs, ships, and maintains production software — the operational backbone of a media group, community platforms, and apps on the Play Store. Engineering that has to work every day, not just on launch day.</p>
+      <div class="hero-actions">
+        <a href="portfolio.html" class="btn btn-primary">See our work <span class="arw">→</span></a>
+        <a href="contact.html" class="btn btn-ghost">Start a project</a>
+      </div>
+
+      <!-- LEDGER: signature element — work as register line-items -->
+      <div class="ledger">
+        <div class="ledger-row">
+          <span class="idx">01</span>
+          <span class="what">Media operations suite</span>
+          <span class="meta">distribution · billing · payroll · inventory</span>
+          <span class="stat">6<small>systems in production</small></span>
+        </div>
+        <div class="ledger-row">
+          <span class="idx">02</span>
+          <span class="what">Community &amp; matrimony platforms</span>
+          <span class="meta">web + mobile · verified profiles</span>
+          <span class="stat">2<small>live products</small></span>
+        </div>
+        <div class="ledger-row">
+          <span class="idx">03</span>
+          <span class="what">Published mobile apps</span>
+          <span class="meta">android · google play</span>
+          <span class="stat">2<small>on the store</small></span>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="support" aria-labelledby="support-heading">
-    <h2 id="support-heading">Contact &amp; support</h2>
-    <p>Email <a href="mailto:srranka@gmail.com">srranka@gmail.com</a> and mention the app you need help with.</p>
-    <p>Developer: Satish Ratanchand Ranka · Nagpur, Maharashtra, India</p>
+
+  <!-- WHAT WE DO -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What we do</span>
+        <h2>Full-stack engineering, end to end.</h2>
+        <p>From the database to the app store. We take a problem, build the software that solves it, and stay to keep it running.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="cell">
+          <span class="num">/ 01</span>
+          <h3>Custom software</h3>
+          <p>Operational systems built around how your organisation actually works — not off-the-shelf software you have to bend around.</p>
+          <div class="stack"><b>Backend</b> · Node.js · PostgreSQL<br><b>Ops</b> · payroll · inventory · billing</div>
+        </div>
+        <div class="cell">
+          <span class="num">/ 02</span>
+          <h3>Web platforms</h3>
+          <p>Fast, reliable web applications and admin panels — the kind teams log into every day and depend on.</p>
+          <div class="stack"><b>Frontend</b> · React · vanilla JS<br><b>Infra</b> · VPS · REST APIs</div>
+        </div>
+        <div class="cell">
+          <span class="num">/ 03</span>
+          <h3>Mobile apps</h3>
+          <p>Android apps taken all the way from idea to a published, maintained listing on the Google Play Store.</p>
+          <div class="stack"><b>Mobile</b> · React Native · Expo<br><b>Release</b> · Play Console</div>
+        </div>
+      </div>
+    </div>
   </section>
-  <footer>This site uses GitHub Pages hosting and has no advertising or analytics scripts. GitHub receives web-request information to serve the site; see its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Statement</a>.</footer>
+
+  <!-- APPROACH -->
+  <section class="section" style="padding-top:0;">
+    <div class="wrap two-col">
+      <div>
+        <span class="eyebrow">How we work</span>
+        <p class="lead-serif" style="margin-top:14px;">A small team that ships, and stays.</p>
+      </div>
+      <div class="prose">
+        <p><strong>Built to last, not just to launch.</strong> Most of what we've built has been in production for years. We write software the way you'd want the systems you rely on to be written — carefully, and with someone still around to fix it.</p>
+        <p><strong>A family of engineers.</strong> Satsang Technology is family-run, with a team trained in computer science at leading institutions in India and abroad. Small enough to care about the detail; skilled enough to take on serious work.</p>
+        <p><strong>Rooted in community.</strong> We began by building tools for our own community, and that instinct — software that genuinely serves the people using it — still shapes everything we take on.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;" aria-labelledby="apps-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Our apps</span>
+        <h2 id="apps-heading">Your apps. Your information.</h2>
+        <p>Find privacy policies and support for Watchover, WishApp, and Keepsake.</p>
+      </div>
+      <a href="apps.html" class="btn btn-ghost">Apps &amp; privacy <span class="arw">→</span></a>
+    </div>
+  </section>
+
+  <!-- BAND -->
+  <section class="band">
+    <div class="wrap">
+      <span class="eyebrow">Work with us</span>
+      <h2>Have something that needs building — or fixing?</h2>
+      <p>Whether it's a new product, an internal system, or an app you want on the store, tell us what you're trying to do.</p>
+      <a href="contact.html" class="btn btn-primary">Get in touch <span class="arw">→</span></a>
+    </div>
+  </section>
 </main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <span class="mark">Satsang<b>.</b> Technology</span>
+      <p>A family-run software studio building and maintaining production systems, platforms, and apps.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Our work</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact</a>
+      <a href="apps.html">Apps &amp; privacy</a>
+    </div>
+    <div class="foot-col">
+      <h4>Reach us</h4>
+      <a href="mailto:hello@satsangtechnology.in">hello@satsangtechnology.in</a> / <a href="mailto:satsangtechno@gmail.com">satsangtechno@gmail.com</a>
+      <span>Nagpur, Maharashtra, India</span>
+    </div>
+  </div>
+  <div class="wrap foot-base">
+    <span>© 2026 Satsang Technology</span>
+    <a href="https://satsangtechnology.in/">satsangtechnology.in</a>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
