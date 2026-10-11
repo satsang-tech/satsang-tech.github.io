@@ -26,9 +26,26 @@
     footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e1e8e2; font-size: 14px; color: #66736b; }
     @media (max-width: 520px) { body { padding: 12px; } main { padding: 24px 20px; } .summary, .contact { padding: 18px; } }
     @media print { body { padding: 0; background: #fff; } main { max-width: none; padding: 0; box-shadow: none; } a { color: inherit; } }
+    .site-nav { max-width: 800px; margin: 0 auto 16px; padding: 16px 24px; background: #fff; border: 1px solid #e1e8e2; border-radius: 12px; }
+    .site-brand { display: inline-block; padding: 4px 0; font-size: 16px; font-weight: 700; text-decoration: none; }
+    .site-links, .policy-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0 20px; }
+    .site-links a, .policy-nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; }
+    .policy-nav { margin-top: 32px; padding-top: 16px; border-top: 1px solid #e1e8e2; }
+    @media print { .site-nav, .policy-nav { display: none; } }
   </style>
 </head>
 <body>
+<nav class="site-nav" id="site-navigation" aria-label="Website navigation">
+  <a class="site-brand" href="../index.html">Satsang Technology</a>
+  <div class="site-links">
+    <a href="../index.html">Home</a>
+    <a href="../services.html">Services</a>
+    <a href="../portfolio.html">Work</a>
+    <a href="../about.html">About</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../apps.html">Apps &amp; privacy</a>
+  </div>
+</nav>
 <main>
   <header>
     <p class="brand">Keepsake</p>
@@ -107,6 +124,11 @@
     <p>For privacy questions or help correcting or deleting data, mention Keepsake and describe the issue. Please do not send private photos, contact lists, face representations or phone unlock credentials.</p>
   </section>
   <footer>Keepsake · <a href="../index.html">Satsang Technology</a></footer>
+  <nav class="policy-nav" aria-label="Policy page navigation">
+    <a href="../index.html">Back to Home</a>
+    <a href="../apps.html">All apps &amp; privacy policies</a>
+    <a href="#site-navigation">Back to top</a>
+  </nav>
 </main>
 </body>
 </html>

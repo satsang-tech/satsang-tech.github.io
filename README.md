@@ -12,8 +12,9 @@ on October 11, 2026. All five source pages are included:
 - Contact: `contact.html`
 
 `apps.html` retains the existing app descriptions and support information, with
-links from the homepage and every studio footer. The existing policy documents
-and their public URLs are unchanged.
+links from the homepage and every studio footer. Policy wording and public URLs
+are unchanged. Each policy page includes website navigation at the top and
+explicit return links at the bottom, using plain HTML and system fonts.
 
 - Keepsake: https://satsang-tech.github.io/keepsake/privacy-policy.html
 - Watchover: https://satsang-tech.github.io/watchover/privacy-policy.html
